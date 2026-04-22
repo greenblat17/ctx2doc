@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctx2doc"
+version = "0.2.0"
+description = "Create portable Markdown snapshots from Codex CLI and Claude Code sessions."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["mcp"]
+
+[project.urls]
+Homepage = "https://github.com/greenblat17/ctx2doc"
+Issues = "https://github.com/greenblat17/ctx2doc/issues"
+
+[project.scripts]
+ctx2doc = "ctx2doc.cli:main"
+ctx2doc-mcp = "ctx2doc.mcp_server:main"
+
+[tool.setuptools.packages.find]
+include = ["ctx2doc*"]

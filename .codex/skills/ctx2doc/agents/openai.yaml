@@ -1,0 +1,4 @@
+interface:
+  display_name: "ctx2doc"
+  short_description: "Create, inspect, and reuse ctx2doc project snapshots"
+  default_prompt: "Use $ctx2doc to create or load a ctx2doc snapshot for the current project."
